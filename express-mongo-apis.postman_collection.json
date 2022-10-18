@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "d7f4d5da-845c-4c2c-989f-03726ca0a0bb",
+		"name": "express-mongo-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insertdata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\":[\n        {\n            \"collectionName\":\"CUSTOMER\",\n            \"data\":[\n                {\n                    \"cno\":1,\n                    \"cust_name\":\"sagar\",\n                    \"cust_phone\":99123,\n                    \"location\":\"solapur\",\n                    \"gender\":\"Male\"\n                },\n                {\n                    \"cno\":2,\n                    \"cust_name\":\"balaji\",\n                    \"cust_phone\":99123,\n                    \"location\":\"solapur\",\n                    \"gender\":\"Male\"\n                },\n                {\n                    \"cno\":3,\n                    \"cust_name\":\"venky\",\n                    \"cust_phone\":12334,\n                    \"location\":\"solapur\",\n                    \"gender\":\"Male\"\n                },\n                {\n                    \"cno\":4,\n                    \"cust_name\":\"soni\",\n                    \"cust_phone\":12334,\n                    \"location\":\"nagpur\",\n                    \"gender\":\"Female\"\n                },\n                {\n                    \"cno\":5,\n                    \"cust_name\":\"rani\",\n                    \"cust_phone\":99123,\n                    \"location\":\"pune\",\n                    \"gender\":\"Female\"\n                }\n            ]\n        },\n        {\n            \"collectionName\":\"ITEM\",\n            \"data\":[\n                {\n                    \"itemno\":1,\n                    \"itemname\":\"paper\",\n                    \"color\":\"white\",\n                    \"weight\":20,\n                    \"expire_date\":\"2021-1-3\",\n                    \"price\":4000,\n                    \"shop_name\":\"abc\"    \n                },\n                {\n                    \"itemno\":1,\n                    \"itemname\":\"paper\",\n                    \"color\":\"white\",\n                    \"weight\":20,\n                    \"expire_date\":\"2022-1-3\",\n                    \"price\":4000,\n                    \"shop_name\":\"amar\"    \n                },\n                {\n                    \"itemno\":2,\n                    \"itemname\":\"board\",\n                    \"color\":\"black\",\n                    \"weight\":10,\n                    \"expire_date\":\"2022-1-3\",\n                    \"price\":10000,\n                    \"shop_name\":\"bansi\"    \n                },\n                {\n                    \"itemno\":3,\n                    \"itemname\":\"laptop\",\n                    \"color\":\"white\",\n                    \"weight\":5,\n                    \"expire_date\":\"2022-1-3\",\n                    \"price\":30000,\n                    \"shop_name\":\"mahadev\"    \n                },\n                {\n                    \"itemno\":4,\n                    \"itemname\":\"door\",\n                    \"color\":\"red\",\n                    \"weight\":20,\n                    \"expire_date\":\"2022-1-3\",\n                    \"price\":40000,\n                    \"shop_name\":\"nida\"    \n                },\n                {\n                    \"itemno\":5,\n                    \"itemname\":\"trimmer\",\n                    \"color\":\"black\",\n                    \"weight\":5,\n                    \"expire_date\":\"2022-1-3\",\n                    \"price\":5500,\n                    \"shop_name\":\"fortune\"    \n                }\n            ]\n        },\n        {\n            \"collectionName\":\"CUST_ITEM\",\n            \"data\":[\n                {\n                    \"cno\":1,\n                    \"itemno\":1,\n                    \"quantity_purchased\":5,\n                    \"date_purchase\":\"2022-1-3\" \n                },\n                {\n                    \"cno\":2,\n                    \"itemno\":3,\n                    \"quantity_purchased\":3,\n                    \"date_purchase\":\"2022-1-3\" \n                },\n                {\n                    \"cno\":3,\n                    \"itemno\":2,\n                    \"quantity_purchased\":2,\n                    \"date_purchase\":\"2022-1-3\" \n                },\n                {\n                    \"cno\":4,\n                    \"itemno\":5,\n                    \"quantity_purchased\":5,\n                    \"date_purchase\":\"2022-1-3\" \n                },\n                {\n                    \"cno\":5,\n                    \"itemno\":4,\n                    \"quantity_purchased\":8,\n                    \"date_purchase\":\"2022-1-3\" \n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insertdata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insertdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteitems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "custsamelocname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "coloursofitem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "itemnames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
